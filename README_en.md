@@ -23,12 +23,12 @@ GAN-Generative Adversarial Network, was praised by "the Father of Convolutional 
 
 * Get started through ppgan.app interface:
 
- ```python
- from ppgan.apps import RealSRPredictor
- sr = RealSRPredictor()
- sr.run("docs/imgs/monarch.png")
- ```
-* More usage of pre-trained models, please refer to [ppgan.apps apis](./docs/en_US/apis/apps.md)
+   ```python
+   from ppgan.apps import RealSRPredictor
+   sr = RealSRPredictor()
+   sr.run("docs/imgs/monarch.png")
+   ```
+* More applications, please refer to [ppgan.apps apis](./docs/en_US/apis/apps.md)
 * More tutorials:
   - [Data preparation](./docs/en_US/data_prepare.md)
   - [Training/Evaluating/Testing basic usage](./docs/zh_CN/get_started.md)
@@ -40,6 +40,8 @@ GAN-Generative Adversarial Network, was praised by "the Father of Convolutional 
 * [PSGAN](./docs/en_US/tutorials/psgan.md)
 * [First Order Motion Model](./docs/en_US/tutorials/motion_driving.md)
 * [FaceParsing](./docs/en_US/tutorials/face_parse.md)
+* [AnimeGANv2](./docs/en_US/tutorials/animegan.md)
+* [U-GAT-IT](./docs/en_US/tutorials/ugatit.md)
 
 ## Composite Application
 
@@ -84,6 +86,12 @@ GAN-Generative Adversarial Network, was praised by "the Father of Convolutional 
   <img src='./docs/imgs/ugatit.png'width='700' height='250'/>
 </div>
 
+### Photo animation
+
+<div align='center'>
+  <img src='./docs/imgs/animeganv2.png'width='700' height='250'/>
+</div>
+
 ## Changelog
 
 - v0.1.0 (2020.11.02)
@@ -105,6 +113,12 @@ It was first proposed and used by [ACM（Association for Computing Machinery)](h
 PaddleGAN SIG is such a developer organization that brings together people who interested in GAN. There are frontline developers of PaddlePaddle, senior engineers from the world's top 500, and students from top universities at home and abroad.
 
 We are continuing to recruit developers interested and capable to join us building this project and explore more useful and interesting applications together.
+
+SIG contributions:
+
+- [zhen8838](https://github.com/zhen8838): contributed to AnimeGANv2.
+- [Jay9z](https://github.com/Jay9z): contributed to DCGAN and updated install docs, etc.
+- [HighCWu](https://github.com/HighCWu): contributed to c-DCGAN and WGAN. Support to use `paddle.vision.datasets`.
 
 
 ## Contributing
