@@ -28,7 +28,6 @@ from ppgan.engine.trainer import Trainer
 def main(args, cfg):
     # init environment, include logger, dynamic graph, seed, device, train or test mode...
     setup(args, cfg)
-
     # build trainer
     trainer = Trainer(cfg)
 
@@ -42,8 +41,12 @@ def main(args, cfg):
     if args.evaluate_only:
         trainer.test()
         return
-
-    trainer.train()
+    # training, when keyboard interrupt save weights
+    try:
+        trainer.train()
+    except KeyboardInterrupt as e:
+        trainer.save(trainer.current_epoch)
+    trainer.close()
 
 
 if __name__ == '__main__':
